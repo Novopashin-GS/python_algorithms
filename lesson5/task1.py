@@ -11,7 +11,7 @@ for i in range(count_enterprise):
     my_dict.setdefault(name, sum(proceeds))
     count += sum(proceeds)
 average_proceeds = count/count_enterprise
-name_first = [n for n, v in my_dict.items() if v >= average_proceeds]
+name_first = [n for n, v in my_dict.items() if v > average_proceeds]
 name_second = [n for n, v in my_dict.items() if v < average_proceeds]
 print(f'Названия предприятий, чья прибыль выше средней: {", ".join(name_first)}')
 print(f'Названия предприятий, чья прибыль ниже средней: {", ".join(name_second)}')
