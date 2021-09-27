@@ -38,7 +38,6 @@ def test_2():
 # @profile
 def main():
     test_2()
-    tracemalloc.clear_traces()
     test_1()
 
 
